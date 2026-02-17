@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlockGPT - Ad Blocker for ChatGPT</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0d0d0d;
+      color: #e0e0e0;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .hero img {
+      width: 96px;
+      height: 96px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .tagline {
+      font-size: 18px;
+      color: #888;
+      margin-bottom: 28px;
+    }
+    .cta {
+      display: inline-block;
+      background: #10a37f;
+      color: white;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .cta:hover { background: #0e8c6b; }
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+    .feature {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .feature h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .feature p {
+      font-size: 13px;
+      color: #888;
+      line-height: 1.5;
+    }
+    .screenshot {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .screenshot img {
+      max-width: 100%;
+      border-radius: 10px;
+      border: 1px solid #2a2a2a;
+    }
+    .privacy {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 48px;
+    }
+    .privacy h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .privacy p {
+      font-size: 14px;
+      color: #888;
+      line-height: 1.6;
+    }
+    .privacy a {
+      color: #10a37f;
+      text-decoration: none;
+    }
+    .privacy a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      border-top: 1px solid #2a2a2a;
+      font-size: 13px;
+      color: #555;
+    }
+    footer a {
+      color: #888;
+      text-decoration: none;
+    }
+    footer a:hover { color: #e0e0e0; }
+    @media (max-width: 500px) {
+      .features { grid-template-columns: 1fr; }
+      h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <img src="icons/icon128.png" alt="BlockGPT">
+      <h1>BlockGPT</h1>
+      <p class="tagline">Block sponsored ads on ChatGPT. Lightweight, open-source, and privacy-friendly.</p>
+      <a class="cta" href="https://chromewebstore.google.com/detail/blockgpt/bajcgkhdhgagjpdlhbplghghhobkhjak">Add to Chrome</a>
+    </div>
+
+    <div class="screenshot">
+      <img src="image.png" alt="BlockGPT in action">
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Real-time Blocking</h3>
+        <p>Automatically hides sponsored ads as they load. No manual action needed.</p>
+      </div>
+      <div class="feature">
+        <h3>Upgrade Banner Removal</h3>
+        <p>Removes "Get Plus" nag bars so you can focus on your conversation.</p>
+      </div>
+      <div class="feature">
+        <h3>Stats Dashboard</h3>
+        <p>Tracks blocked ads per page and lifetime total with a clean popup UI.</p>
+      </div>
+      <div class="feature">
+        <h3>One-Click Toggle</h3>
+        <p>Easily pause and resume blocking whenever you want.</p>
+      </div>
+    </div>
+
+    <div class="privacy">
+      <h2>Privacy</h2>
+      <p>BlockGPT collects only anonymous analytics: advertiser names, timestamps, and a random installation ID. No personal data, no browsing history, no ChatGPT conversations. <a href="https://github.com/jerry2247/BlockGPT/blob/main/PRIVACY.md">Read the full privacy policy.</a></p>
+    </div>
+
+    <footer>
+      <p>Built by Jerry Gu &middot; <a href="https://github.com/jerry2247/BlockGPT">GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
